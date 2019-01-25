@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_24_233829) do
+ActiveRecord::Schema.define(version: 2019_01_25_043600) do
 
   create_table "coaches", force: :cascade do |t|
     t.string "f_name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2019_01_24_233829) do
     t.string "password"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "games", force: :cascade do |t|
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(version: 2019_01_24_233829) do
     t.integer "stats"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
   end
 
   create_table "positions", force: :cascade do |t|

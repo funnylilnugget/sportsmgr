@@ -1,2 +1,14 @@
-<h1>Coaches#new</h1>
-<p>Find me in app/views/coaches/new.html.erb</p>
+<div>
+  <h1> Sign Up</h1>
+
+  <%= form_for(@coach) do |c|%>
+    <%=
+    <%= c.text_field :f_name, placeholder: "First Name" %>
+    <%= c.text_field :l_name, placeholder: "Last Name" %>
+    <%= c.email_field :email, placeholder: "Email"%>
+    <%= c.password_field :password, placeholder: "Password" %>
+    <%= c.password_field :password_confirmation, placeholder: "Confirm Password"%>
+
+    <%= c.submit 'Sign Up' %>
+
+  <% end %>
