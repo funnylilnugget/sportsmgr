@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  trys: 1
+  penalty_try: 1
+  converstion: 1
+  field_goal: 1
+  penalty_goal: 1
+
+two:
+  trys: 1
+  penalty_try: 1
+  converstion: 1
+  field_goal: 1
+  penalty_goal: 1
